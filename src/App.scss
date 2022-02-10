@@ -1,0 +1,35 @@
+@import './Styles/mixins';
+@import './Styles/variables';
+@import './Styles/buttons.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: $darkText;
+  background-color: $backgroundLight;
+  min-height: 100vh;
+  overflow: hidden
+}
+
+.wrapper {
+  @include flex-center(column);
+  padding: 50px 0;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.filterSection {
+  margin-top: 20px;
+}

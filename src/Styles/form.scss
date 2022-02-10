@@ -1,0 +1,49 @@
+@import './variables';
+
+form {
+  max-width: 340px;
+}
+
+.addForm {
+  height: 100px;
+
+  input {
+    padding: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    border: 1px solid $accentFirst;
+  }
+
+  label {
+    margin-right: 10px;
+  }
+
+  select {
+    padding: 4.5px;
+    border-color: $accentFirst;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+  .errorMessage {
+    color: $errText;
+    font-size: .7rem;
+    line-height: .8;
+    text-align: center;
+  }
+}
+
+.filterForm {
+  display: flex;
+  font-size: .7rem;
+  flex-wrap: wrap;
+  height: auto;
+  justify-content: space-between;
+
+  div {
+    display: flex;
+    align-items: center;
+    height: auto;
+    margin: 0 5px;
+  }
+}

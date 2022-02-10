@@ -1,0 +1,29 @@
+@import './mixins';
+
+.colorList {
+  @include flex-center(row);
+  flex-wrap: wrap;
+  gap: 5px;
+
+  .singleColor {
+    flex-basis: 10%;
+    min-width: 150px;
+    padding: 20px 5px;
+
+    .rectangle {
+      height: 35px;
+      width: 100%;
+    }
+
+    .desc {
+      @include flex-center(row);
+      padding-top: 10px;
+    }
+
+    p {
+      font-size: .8rem;
+      display: inline-block;
+      margin-right: 5px;
+    }
+  }
+}

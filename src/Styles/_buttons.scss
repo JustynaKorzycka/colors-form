@@ -1,0 +1,48 @@
+@import './variables';
+
+.btn {
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: all .3s;
+
+
+  &--big {
+    @extend .btn;
+    padding: 5px 10px;
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    text-transform: uppercase;
+
+    &--success {
+      @extend .btn--big;
+      background-color: transparent;
+      border-color: $accentSecond;
+
+      &:hover {
+        background-color: $accentSecond;
+        color: $lightText;
+        transform: scale(1.05);
+      }
+    }
+  }
+
+  &--small {
+    @extend .btn;
+    font-weight: 600;
+    padding: 1px 5px;
+
+    &--dangerous {
+      @extend .btn--small;
+      border-color: $accentDangerous;
+      color: $accentDangerous;
+
+      &:hover {
+        background-color: $accentDangerous;
+        color: $lightText;
+        transform: scale(1.05);
+      }
+    }
+  }
+}
